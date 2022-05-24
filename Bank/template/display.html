@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+<head>
+    <meta charset="UTF-8">
+    <title>Display Page</title>
+</head>
+{% block content %}
+<body>
+<table border=1 align="center">
+  <tr>
+    <td>
+     <h2> Name </h2>
+    </td>
+    <td>
+      <h2> Account_No </h2>
+    </td>
+    <td>
+      <h2> Location </h2>
+    </td>
+    <td>
+      <h2> Mobile_No </h2>
+    </td>
+  </tr>
+  {% for d in form %}
+      <tr>
+          <td>
+          <h4>{{d.name }}</h4>
+          </td>
+          <td>
+          <h4>{{d.account_no}}</h4>
+          </td>
+          <td>
+          <h4>{{d.location}}</h4>
+          </td>
+          <td>
+          <h4>{{d.mobile_no}}</h4>
+          </td>
+      </tr>
+  {% endfor %}
+</table>
+</body>
+{% endblock %}

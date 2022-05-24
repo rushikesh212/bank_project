@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+<head>
+    <meta charset="UTF-8">
+    <title>Add Data Page</title>
+</head>
+{% block content %}
+<body>
+<h1 align="middle">Welcome Bank Page</h1>
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<div class="container" align="center">
+    <form class="" method="POST">
+        {{form.as_table}}
+        {%csrf_token%}
+        <input type="submit"  name="" value="Submit">
+    </form>
+</div>
+</body>
+{% endblock %}
